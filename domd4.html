@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM MANIPULATION</title>
+</head>
+<body>
+
+<button onclick="
+	buttonElement = document.querySelector('.js-button')
+
+	if(buttonElement.innerHTML === 'click'){
+		buttonElement.innerHTML = 'unclick'
+	}else if((buttonElement.innerHTML === 'clicked')||
+		      (buttonElement.innerHTML === 'already clicked')
+
+		){
+		buttonElement.innerHTML = 'click'
+	}else{
+			buttonElement.innerHTML = 'already clicked'
+	}
+    " class="js-button">click
+	
+</button>
+
+</body>
+<script src="domd4.js"></script>
+</html>
